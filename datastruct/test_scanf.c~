@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[20] = { 0 };
+    char c = 0;
+    scanf("%s", str);
+    scanf("%c", &c);
+    printf("%s\n", str);
+    printf("%c\n", c);
+    system("pause");
+    return 0;
+}
