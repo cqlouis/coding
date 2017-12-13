@@ -1,9 +1,11 @@
 .section .data
-
+output: .ascii  "Hello world  \n"
 .section .text
 .globl _start
 _start:
 
-movq $1, %rax
-#movl $4, %ebx
-#int $0x80
+movq $4, %rax
+movq $1, %rbx
+movq $output, %rcx
+movq $11, %rdx
+int $0x80
